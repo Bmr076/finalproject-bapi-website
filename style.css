@@ -29,14 +29,19 @@ h2 a:hover {
     text-decoration: underline;
 }
 
+.diagram-wrapper {
+    margin: 20px auto; 
+    display: flex;
+    justify-content: center;
+    width: fit-content; 
+    padding: 20px 0;
+}
+
 .diagram {
-    display: block;
-    margin-left: 0;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: none;
+    max-width: none; 
     height: auto;
+    margin: 0; 
+    display: block;
 }
 
 .center {
