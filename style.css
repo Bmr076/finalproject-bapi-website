@@ -29,10 +29,13 @@ h2 a:hover {
 }
 
 .diagram {
-    display: block;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
     width: auto;
     max-width: none;
-    margin: 0;
+    display: block;
 }
 
 .center {
