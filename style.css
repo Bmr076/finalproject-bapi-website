@@ -39,6 +39,7 @@ h2 a:hover {
 
 .diagram {
     width: auto;
+    max-width: none;
     display: block;
     margin: 0;
 }
