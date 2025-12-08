@@ -10,22 +10,14 @@
 
     <h1 class="center">BAPI Game Engine</h1>
 
-    <div class="video-wrapper" onclick="loadVideo()">
-        <div class="video-placeholder">Click to play</div>
-    </div>
-
-    <script>
-    function loadVideo() {
-        const wrapper = document.querySelector('.video-wrapper');
-        wrapper.innerHTML = `
-            <iframe width="800" height="450"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+    <div class="video-container">
+        <iframe width="800" height="450"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Rick Astley - Never Gonna Give You Up"
                 frameborder="0"
                 allowfullscreen>
-            </iframe>
-        `;
-    }
-    </script>
+        </iframe>
+    </div>
 
     <img src="media/screenshot1.png" width="500" />
     <img src="media/screenshot2.png" width="500" />
