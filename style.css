@@ -30,12 +30,10 @@ h2 a:hover {
 }
 
 .diagram {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto;
-    max-width: none;
     display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .center {
