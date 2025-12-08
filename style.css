@@ -25,13 +25,6 @@ a:hover {
     text-align: center;
 }
 
-img {
-    display: block;
-    margin: 20px auto;       /* center images */
-    border: 2px solid #DDD;
-    border-radius: 6px;
-}
-
 .video-container {
     text-align: center;      /* center iframe */
     margin: 20px 0;
@@ -48,4 +41,10 @@ pre {
 footer {
     margin-top: 40px;
     text-align: center;
+}
+
+img, iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
