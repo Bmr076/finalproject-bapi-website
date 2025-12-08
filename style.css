@@ -30,7 +30,7 @@ h2 a:hover {
 }
 
 .diagram {
-    position: relative;
+    position: absolute;
     left: 50%;
     transform: translateX(-50%);
     width: auto;
