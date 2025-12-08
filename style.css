@@ -20,6 +20,10 @@ img {
     margin: 20px 0;
 }
 
+.center {
+    text-align: center;
+}
+
 pre {
     background: #EEE;
     padding: 10px;
