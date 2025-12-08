@@ -38,12 +38,16 @@ h2 a:hover {
 }
 
 .diagram {
-    max-width: none; 
+    position: absolute; 
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: none !important;
+    width: 1614px;
     height: auto;
-    margin: 0; 
     display: block;
 }
-
 .center {
     text-align: center;
 }
