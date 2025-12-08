@@ -31,7 +31,12 @@ h2 a:hover {
 
 .diagram {
     display: block;
-    margin: 20px auto;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: none;
+    height: auto;
 }
 
 .center {
