@@ -37,6 +37,13 @@ h2 a:hover {
     padding: 20px 0;
 }
 
+.diagram-space-holder {
+    height: 953px; 
+    margin: 20px auto; 
+    position: relative; 
+    overflow: visible; 
+}
+
 .diagram {
     position: absolute; 
     left: 50%;
