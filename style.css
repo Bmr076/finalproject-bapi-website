@@ -31,8 +31,7 @@ h2 a:hover {
 .diagram {
     position: relative;
     left: 50%;
-    right: 50%;
-    margin-left: -50vw;
+    transform: translateX(-50%);
     width: auto;
     max-width: none;
     display: block;
