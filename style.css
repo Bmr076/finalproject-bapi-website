@@ -28,19 +28,10 @@ h2 a:hover {
     text-decoration: underline;
 }
 
-.fullwidth {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-}
-
 .diagram {
+    display: block;
     width: auto;
     max-width: none;
-    display: block;
     margin: 0;
 }
 
