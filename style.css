@@ -7,6 +7,7 @@ body {
     padding: 20px;
 
     line-height: 1.6;
+    position: relative;
 }
 
 h1, h2 {
@@ -30,7 +31,7 @@ h2 a:hover {
 
 .diagram {
     position: relative;
-    left: 25%;
+    left: 50%;
     transform: translateX(-50%);
     width: auto;
     max-width: none;
