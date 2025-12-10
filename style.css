@@ -108,8 +108,11 @@ h1, h2 {
 h2 a {
     color: #3b7e46;
 }
+h3 a {
+    color: #48a257;
+}
 
-h2 a:hover {
+h3 a:hover {
     color: #285732;
 }
 
