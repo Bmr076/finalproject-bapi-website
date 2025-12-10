@@ -12,8 +12,8 @@
 
     <div class="video-container">
         <iframe width="800" height="450"
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                title="Rick Astley - Never Gonna Give You Up"
+                src="https://youtu.be/wGFAiUFf8XQ"
+                title="Bapi Farms Video"
                 frameborder="0"
                 allowfullscreen>
         </iframe>
@@ -62,27 +62,54 @@
         </a>
     </h2>
 
+    <h2 class="center">
+        How to Play the Game
+    </h2>
+    <div class="center" style="max-width: 800px; margin: 0 auto; text-align: left; padding: 20px;">
+            <p>
+                - [WASD] To move
+                - [E] To pick up/set down tools and crops
+                - [Left Click] To use the tool you're holding
+                - [Escape] To open the menu
+            </p>
+    </div>
+
     <h2 class="center">Postmortem</h2>
 
     <div class="center" style="max-width: 800px; margin: 0 auto; text-align: left; padding: 20px;">
         <p>
-            Looking back on our development process, there are several areas we would have expanded given more time.
+            Looking back on our development process, there are several areas of our engine and game that we would have expanded if we had more time.
         </p>
 
         <h3>Core Systems & Infrastructure</h3>
-        <ul>
-            <li><strong>Level Progression System:</strong> A more robust progression framework with multiple levels, unlockable content, and meaningful difficulty scaling.</li>
-            <li><strong>Audio System:</strong> Background music, sound effects for player actions, and audio feedback to enhance experience and provide clearer gameplay cues.</li>
-            <li><strong>Save/Load System:</strong> Proper serialization and deserialization to allow players to save their progress and resume gameplay sessions.</li>
-            <li><strong>Keybind Customization:</strong> A settings menu enabling players to remap controls to their preferences.</li>
-        </ul>
+        <p>
+            One of our main goals would have been to build a more robust level progression system with multiple stages, unlockable content, and meaningful difficulty scaling. This would have given players a clearer sense of advancement as they moved through the game.
+        </p>
+        <p>
+            We also hoped to implement a full audio system. Background music, sound effects for actions, and clearer audio cues would have made the game more immersive and helped players better understand in-game events.
+        </p>
+        <p>
+            A proper save/load system using serialization and deserialization was another feature we wanted to include. This would have enabled players to preserve their progress between sessions.
+        </p>
+        <p>
+            Additionally, we wanted to provide a settings menu for custom keybinds so players could tailor controls to their preferences.
+        </p>
 
         <h3>Gameplay Mechanics</h3>
-        <ul>
-            <li><strong>Monster-Plant Interactions:</strong> Enemies that actively attack and damage player crops.</li>
-            <li><strong>Seed Packet System:</strong> Limited-quantity seed packets that spawn randomly throughout levels, or alternatively, a full shop system for purchasing seeds and supplies.</li>
-            <li><strong>Tool Inventory:</strong> An inventory management system for tools.</li>
-        </ul>
+        <p>
+            On the gameplay side, we would add monster–plant interactions, allowing enemies to actively attack and damage crops.
+        </p>
+        <p>
+            Another idea was a seed packet system with limited quantities that spawn randomly during gameplay. We also could implement a full shop mechanic for purchasing seeds and other supplies.
+        </p>
+        <p>
+            Finally, we wanted to build an inventory management system for tools to make gameplay more strategic and organized.
+        </p>
+
+        <h3>What We Learned</h3>
+        <p>
+            Throughout development, we gained experience with a number of core game-dev concepts. While implementing the tile editor, we learned how to build a functional GUI in PyQt and how to create an autotiling system. Understanding delta time was another important lesson. It allowed us to ensure consistent gameplay speed across hardware variations. We also learned how to handle diagonal movement properly by normalizing velocity so players don't move faster diagonally than they do vertically or horizontally. Lastly, implementing a flexible input management system using the command pattern gave us valuable experience in decoupling input from game logic.
+        </p>
 
     </div>
 
