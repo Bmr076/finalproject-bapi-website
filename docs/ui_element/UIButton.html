@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Class UIButton</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">
+						<a href="../components.html">components</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../components/animation_component.html">animation_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/collision_component.html">collision_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/script_component.html">script_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/texture_component.html">texture_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/transform_component.html">transform_component</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../camera.html">camera</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../centeredRect.html">centeredRect</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../component.html">component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../engine_config.html">engine_config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameapplication.html">gameapplication</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameobject.html">gameobject</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gamestate.html">gamestate</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../inputmanager.html">inputmanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../resourcemanager.html">resourcemanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scene.html">scene</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scenetree.html">scenetree</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sdl_abstraction.html">sdl_abstraction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sound.html">sound</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../state.html">state</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tileentity.html">tileentity</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tilemap.html">tilemap</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../ui_element.html">ui_element</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Class UIButton</h1><p></p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">class</span> <span class="typ">UIButton</span><br>&nbsp;&nbsp;: <a href="../ui_element/UIElement.html"><span class="typ">UIElement</span></a><span class="pun">;</span>
+					</div>
+				</code>
+			</div>
+			
+			<section><h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIButton.this.html" class="public">
+								<code>this</code>
+							</a>
+							<span class="tableEntryAnnotation">(renderer, screenRect, text, fontSize, backgroundOpacity)</span>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Fields</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mBackgroundColor.html" class="public inherited"><code>mBackgroundColor</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">pixels<wbr/></span><span class="pun">.</span><span class="typ">SDL_Colour</span></code></td><td>Background color to draw behind text/texture/etc
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mFont.html" class="public inherited"><code>mFont</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl_ttf<wbr/></span><span class="pun">.</span><span class="typ">TTF_Font</span><span class="pun">*</span></code></td><td>UI text font
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mOnClickHandler.html" class="public inherited"><code>mOnClickHandler</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">void</span> <span class="kwd">function</span><span class="pun">(</span><span class="typ">void</span><span class="pun">*</span><span class="pun">)</span></code></td><td>Delegate to be called when this UI element is mouse clicked by the user
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mRenderer.html" class="public inherited"><code>mRenderer</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">render<wbr/></span><span class="pun">.</span><span class="typ">SDL_Renderer</span><span class="pun">*</span></code></td><td>Reference to gameapplication's renderer, for later adding textures or text to the UI element
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mScreenRect.html" class="public inherited"><code>mScreenRect</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">rect<wbr/></span><span class="pun">.</span><span class="typ">SDL_FRect</span></code></td><td>Position (in screen space) and dimensions of UI element
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mSpriteRectInSrc.html" class="public inherited"><code>mSpriteRectInSrc</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">rect<wbr/></span><span class="pun">.</span><span class="typ">SDL_FRect</span></code></td><td>Positions and dimensions of UI element within mSpriteTexture sprite asset
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mSpriteTexture.html" class="public inherited"><code>mSpriteTexture</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">render<wbr/></span><span class="pun">.</span><span class="typ">SDL_Texture</span><span class="pun">*</span></code></td><td>Texture containing the ui element sprite to be rendered (if any)
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mText.html" class="public inherited"><code>mText</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">string</span></code></td><td>Text string
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mTextColor.html" class="public inherited"><code>mTextColor</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">pixels<wbr/></span><span class="pun">.</span><span class="typ">SDL_Colour</span></code></td><td>UI text color
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mTextRect.html" class="public inherited"><code>mTextRect</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">rect<wbr/></span><span class="pun">.</span><span class="typ">SDL_FRect</span></code></td><td>Position (in screen space) and dimensions of UI text
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.mTextTexture.html" class="public inherited"><code>mTextTexture</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">render<wbr/></span><span class="pun">.</span><span class="typ">SDL_Texture</span><span class="pun">*</span></code></td><td>Texture containing the text to be rendered (if any)
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Methods</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.OnClick.html" class="public inherited">
+								<code>OnClick</code>
+							</a>
+							<span class="tableEntryAnnotation">(gameApp)</span>
+						</td>
+						<td>Call the click handler function
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.Render.html" class="public inherited">
+								<code>Render</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td>Render the UI element using its position and dimensions
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.SetOnClickHandler.html" class="public inherited">
+								<code>SetOnClickHandler</code>
+							</a>
+							<span class="tableEntryAnnotation">(f)</span>
+						</td>
+						<td>Set the handler to be called when this element is clicked
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.SetUIElementText.html" class="public inherited">
+								<code>SetUIElementText</code>
+							</a>
+							<span class="tableEntryAnnotation">(text, textColor, font, screenTextRect)</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.SetUIElementTexture.html" class="public inherited">
+								<code>SetUIElementTexture</code>
+							</a>
+							<span class="tableEntryAnnotation">(resourceName, srcRect)</span>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Aliases</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../ui_element/UIElement.~this.html" class="public inherited">
+								<code>~this</code>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							<p>Aya Kasim, Isai Melendez, Pax Ryan, Bradley Rodriguez
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>© 2025
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>

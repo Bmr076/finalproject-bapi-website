@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Struct CenteredRect</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">
+						<a href="../components.html">components</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../components/animation_component.html">animation_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/collision_component.html">collision_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/script_component.html">script_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/texture_component.html">texture_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/transform_component.html">transform_component</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../camera.html">camera</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../centeredRect.html">centeredRect</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../component.html">component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../engine_config.html">engine_config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameapplication.html">gameapplication</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameobject.html">gameobject</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gamestate.html">gamestate</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../inputmanager.html">inputmanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../resourcemanager.html">resourcemanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scene.html">scene</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scenetree.html">scenetree</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sdl_abstraction.html">sdl_abstraction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sound.html">sound</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../state.html">state</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tileentity.html">tileentity</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tilemap.html">tilemap</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../ui_element.html">ui_element</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Struct CenteredRect</h1><p>A wrapper class for an SDL_FRect that represents a rectangle centered on a point.
+  <strong>N.B.</strong> x and y represent the <em>center</em> of the rectangle, not the top left. w and h are the width and height.
+</p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">struct</span> <span class="typ">CenteredRect</span><span class="pun">;</span>
+					</div>
+				</code>
+			</div>
+			
+			<section><h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.this.html" class="public">
+								<code>this</code>
+							</a>
+							<span class="tableEntryAnnotation">(frect, xOffset, yOffset)</span>
+						</td>
+						<td>Construct a CenteredRect from an FRect and optionally an xOffset and yOffset.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Fields</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.centerXOffset.html" class="public"><code>centerXOffset</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">float</span></code></td><td>Relative x offset of the rect's center from w/2. For example, if centerXOffset = -10, the point the rectangle is centered
+around is 10 units left of the rectangle's geometric center at (w/2, h/2).
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.centerYOffset.html" class="public"><code>centerYOffset</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">float</span></code></td><td>Relative y offset of the rect's center from h/2. For example, if centerYOffset = -10, the point the rectangle is centered
+around is 10 units below the rectangle's geometric center at (w/2, h/2).
+centerYOffset is in world coordinates, so positive y is up and negative y is down.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.mRect.html" class="public"><code>mRect</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">rect<wbr/></span><span class="pun">.</span><span class="typ">SDL_FRect</span></code></td><td>SDL_FRect struct for which CenteredRect is an alias.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Methods</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.GetCenter.html" class="public">
+								<code>GetCenter</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.GetTopLeft.html" class="public">
+								<code>GetTopLeft</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../centeredRect/CenteredRect.SetCenter.html" class="public">
+								<code>SetCenter</code>
+							</a>
+							<span class="tableEntryAnnotation">(newCenter)</span>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							<p>Aya Kasim, Isai Melendez, Pax Ryan, Bradley Rodriguez
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>© 2025
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,121 @@
+/* ===== Basic page styling ===== */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 2em;
+    margin-left: 280px;
+    background-color: #f4f1e6; /* light earth tone */
+    color: #1f4d3a; /* deep forest green */
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    font-size: 2em;
+    color: #1f4d3a;
+    border-bottom: 2px solid #316649; /* dark green accent line */
+    padding-bottom: 0.3em;
+}
+h2 {
+    font-size: 1.5em;
+    color: #3b6f53; /* moss green */
+    margin-top: 1.5em;
+}
+h3 {
+    font-size: 1.2em;
+    color: #6fa67c; /* soft leaf green */
+}
+
+/* Links */
+a {
+    color: #3b6f53;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraphs */
+p {
+    margin: 0.8em 0;
+}
+
+/* Lists */
+ul, ol {
+    margin: 0.8em 0 0.8em 1em;
+}
+
+/* Code blocks */
+pre, code {
+    font-family: "Courier New", monospace;
+    background-color: #e7e3d6;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+}
+
+pre {
+    padding: 1em;
+    overflow-x: auto;
+}
+
+/* Module list / navigation */
+nav {
+    background-color: #d2dfd4; /* darker soft-green background */
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 50;
+    width: 220px;
+    height: 100vh;
+    border-right: 2px solid #316649; 
+    overflow-y: auto;
+}
+nav ul::after {
+    content: "";
+    display: block;
+    height: 1.5em;
+}
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+nav li {
+    margin: 0.3em 0;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+th, td {
+    border: 1px solid #d4cfc2; /* dark green accent lines */
+    padding: 0.5em 1em;
+}
+th {
+    background-color: #cbd9ce; /* slightly darker green-gray */
+    text-align: left;
+    color: #1f4d3a;
+}
+
+footer table {
+    width: 100%;
+}
+footer th, footer td {
+    padding: 0em 2em;
+}
+
+/* Footer / small print */
+footer {
+    font-size: 0.8em;
+    color: #b68b4c; /* brown moved here instead */
+    margin-top: 2em;
+    border-top: 1px solid #316649; /* dark green accent */
+    padding-top: 1em;
+
+    padding: 15px;
+    text-align: center;
+    background-color: #f4f1e6;
+}

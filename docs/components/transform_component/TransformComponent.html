@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Class TransformComponent</title>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script><script type="text/javascript" src="../../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">
+						<a href="../../components.html">components</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../../components/animation_component.html">animation_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/collision_component.html">collision_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/script_component.html">script_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/texture_component.html">texture_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../../components/transform_component.html">transform_component</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../camera.html">camera</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../centeredRect.html">centeredRect</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../component.html">component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../engine_config.html">engine_config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../gameapplication.html">gameapplication</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../gameobject.html">gameobject</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../gamestate.html">gamestate</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../inputmanager.html">inputmanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../resourcemanager.html">resourcemanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scene.html">scene</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scenetree.html">scenetree</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../sdl_abstraction.html">sdl_abstraction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../sound.html">sound</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../state.html">state</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../tileentity.html">tileentity</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../tilemap.html">tilemap</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../ui_element.html">ui_element</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Class TransformComponent</h1><p>Represents the size and position of a game object in world space.
+</p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">class</span> <span class="typ">TransformComponent</span><br>&nbsp;&nbsp;: <a href="../../component/IComponent.html"><span class="typ">IComponent</span></a><span class="pun">;</span>
+					</div>
+				</code>
+			</div>
+			
+			<section><h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.this.html" class="public">
+								<code>this</code>
+							</a>
+							<span class="tableEntryAnnotation">(owner, _x, _y, _w, _h, centerXOffset, centerYOffset)</span>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Fields</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.mRectangle.html" class="public"><code>mRectangle</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../centeredRect/CenteredRect.html"><span class="typ">CenteredRect</span></a></code></td><td>A CenteredRect representing the dimensions, position and center offset of the object.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.mRotation.html" class="public"><code>mRotation</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">float</span></code></td><td>The rotation of the game object in degrees (0 &lt;= mRotation &lt; 360)
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../component/IComponent.mOwner.html" class="protected inherited"><code>mOwner</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../gameobject/GameObject.html"><span class="typ">GameObject</span></a></code></td><td></td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Methods</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.DistanceTo.html" class="public">
+								<code>DistanceTo</code>
+							</a>
+							<span class="tableEntryAnnotation">(otherX, otherY)</span>
+						</td>
+						<td>Optional convenience function
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.GetX.html" class="public">
+								<code>GetX</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.GetY.html" class="public">
+								<code>GetY</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.MovePosition.html" class="public">
+								<code>MovePosition</code>
+							</a>
+							<span class="tableEntryAnnotation">(deltaX, deltaY)</span>
+						</td>
+						<td>Sets object position to (x+deltaX, y+deltaY)
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.Render.html" class="public">
+								<code>Render</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.RotateBy.html" class="public">
+								<code>RotateBy</code>
+							</a>
+							<span class="tableEntryAnnotation">(angle)</span>
+						</td>
+						<td>Sets object rotation to current rotation + angle.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.RotateTo.html" class="public">
+								<code>RotateTo</code>
+							</a>
+							<span class="tableEntryAnnotation">(angle)</span>
+						</td>
+						<td>Sets object rotation to angle.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.Serialize.html" class="public">
+								<code>Serialize</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.SetCenterOffset.html" class="public">
+								<code>SetCenterOffset</code>
+							</a>
+							<span class="tableEntryAnnotation">(xOffset, yOffset)</span>
+						</td>
+						<td>Sets object center to (xOffset, yOffset) (relative to (w/2, h/2) in local coordinates)
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.SetDimensions.html" class="public">
+								<code>SetDimensions</code>
+							</a>
+							<span class="tableEntryAnnotation">(w, h)</span>
+						</td>
+						<td>Sets the width and height of the object.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.SetPosition.html" class="public">
+								<code>SetPosition</code>
+							</a>
+							<span class="tableEntryAnnotation">(x, y)</span>
+						</td>
+						<td>Sets object position to (x, y) in world space.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.SetTransform.html" class="public">
+								<code>SetTransform</code>
+							</a>
+							<span class="tableEntryAnnotation">(x, y, w, h, centerXOffset, centerYOffset)</span>
+						</td>
+						<td>Sets the dimensions, position and center offset of the object.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.SetXPosition.html" class="public">
+								<code>SetXPosition</code>
+							</a>
+							<span class="tableEntryAnnotation">(x)</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.SetYPosition.html" class="public">
+								<code>SetYPosition</code>
+							</a>
+							<span class="tableEntryAnnotation">(y)</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/transform_component/TransformComponent.Update.html" class="public">
+								<code>Update</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							<p>Aya Kasim, Isai Melendez, Pax Ryan, Bradley Rodriguez
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>© 2025
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>

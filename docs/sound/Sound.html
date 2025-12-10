@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Struct Sound</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">
+						<a href="../components.html">components</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../components/animation_component.html">animation_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/collision_component.html">collision_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/script_component.html">script_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/texture_component.html">texture_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/transform_component.html">transform_component</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../camera.html">camera</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../centeredRect.html">centeredRect</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../component.html">component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../engine_config.html">engine_config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameapplication.html">gameapplication</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameobject.html">gameobject</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gamestate.html">gamestate</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../inputmanager.html">inputmanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../resourcemanager.html">resourcemanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scene.html">scene</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scenetree.html">scenetree</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sdl_abstraction.html">sdl_abstraction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../sound.html">sound</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../state.html">state</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tileentity.html">tileentity</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tilemap.html">tilemap</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../ui_element.html">ui_element</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Struct Sound</h1><p></p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">struct</span> <span class="typ">Sound</span><span class="pun">;</span>
+					</div>
+				</code>
+			</div>
+			
+			<section><h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.this.html" class="public">
+								<code>this</code>
+							</a>
+							<span class="tableEntryAnnotation">(filepath)</span>
+						</td>
+						<td>Load the sound file .wav into memory from the specified filepath.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Fields</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.m_audioSpec.html" class="public"><code>m_audioSpec</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">audio<wbr/></span><span class="pun">.</span><span class="typ">SDL_AudioSpec</span></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.m_waveLength.html" class="public"><code>m_waveLength</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">uint</span></code></td><td>Length of the .wav data after it is loaded into memory
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.m_waveStart.html" class="public"><code>m_waveStart</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">ubyte</span><span class="pun">*</span></code></td><td>Pointer to the start of the .wav data after it is loaded into memory
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.mFilepath.html" class="public"><code>mFilepath</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">string</span></code></td><td>Filepath for the .wav file for this sound
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.mStream.html" class="public"><code>mStream</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">audio<wbr/></span><span class="pun">.</span><span class="typ">SDL_AudioStream</span><span class="pun">*</span></code></td><td></td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Methods</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.PlaySound.html" class="public">
+								<code>PlaySound</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td>Plays the sound file after it's been loaded into memory.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Aliases</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../sound/Sound.~this.html" class="public">
+								<code>~this</code>
+							</a>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							<p>Aya Kasim, Isai Melendez, Pax Ryan, Bradley Rodriguez
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>© 2025
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>

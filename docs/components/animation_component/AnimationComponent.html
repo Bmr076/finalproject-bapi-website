@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Class AnimationComponent</title>
+		<link rel="stylesheet" type="text/css" href="../../styles/ddox.css"/>
+		<link rel="stylesheet" href="../../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../../scripts/jquery.js">/**/</script><script type="text/javascript" src="../../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view ">
+					<div class="package ">
+						<a href="../../components.html">components</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module selected">
+						<a href="../../components/animation_component.html">animation_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/collision_component.html">collision_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/script_component.html">script_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/texture_component.html">texture_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../components/transform_component.html">transform_component</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../camera.html">camera</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../centeredRect.html">centeredRect</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../component.html">component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../engine_config.html">engine_config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../gameapplication.html">gameapplication</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../gameobject.html">gameobject</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../gamestate.html">gamestate</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../inputmanager.html">inputmanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../resourcemanager.html">resourcemanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scene.html">scene</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../scenetree.html">scenetree</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../sdl_abstraction.html">sdl_abstraction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../sound.html">sound</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../state.html">state</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../tileentity.html">tileentity</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../tilemap.html">tilemap</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../../ui_element.html">ui_element</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Class AnimationComponent</h1><p>Stores a series of frames and multiple animation sequences that can be played
+</p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">class</span> <span class="typ">AnimationComponent</span><br>&nbsp;&nbsp;: <a href="../../component/IComponent.html"><span class="typ">IComponent</span></a><span class="pun">;</span>
+					</div>
+				</code>
+			</div>
+			
+			<section><h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.this.html" class="public">
+								<code>this</code>
+							</a>
+							<span class="tableEntryAnnotation">(owner, r, camera, animDataName)</span>
+						</td>
+						<td>Hold a copy of the texture that is referenced
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Fields</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mCamera.html" class="public"><code>mCamera</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../camera/Camera.html"><span class="typ">Camera</span></a><span class="pun">*</span></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mCollisionRef.html" class="public"><code>mCollisionRef</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../components/collision_component/CollisionComponent.html"><span class="typ">CollisionComponent</span></a></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mCurrentAnimationName.html" class="public"><code>mCurrentAnimationName</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">string</span></code></td><td>Name of the animation currently playing (e.g. "idle")
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mCurrentFramePlaying.html" class="public"><code>mCurrentFramePlaying</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">long</span></code></td><td>Index of the frame currently playing, indexes into mFrames
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mFlipMode.html" class="public"><code>mFlipMode</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">surface<wbr/></span><span class="pun">.</span><span class="typ">SDL_FlipMode</span></code></td><td>Which axes across which the sprite should be flipped (mirrored)
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mFrameInSequence.html" class="public"><code>mFrameInSequence</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">long</span></code></td><td>What number this frame is in the sequence
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mFrameNumbers.html" class="public"><code>mFrameNumbers</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">long</span><span class="pun">[]</span><span class="pun">[</span><span class="typ">string</span><span class="pun">]</span></code></td><td>Array of longs for the named sequence of an animation.
+i.e. this is a map, with a name (e.g. 'walkUp') followed by frame numbers (e.g. [0,1,2,3] )
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mFrames.html" class="public"><code>mFrames</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../components/animation_component/AnimationComponent.Frame.html"><span class="typ">AnimationComponent<wbr/></span><span class="pun">.<wbr/></span><span class="typ">Frame</span></a><span class="pun">[]</span></code></td><td>Collection of all of the possible frames that are part of a sprite.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mRendererRef.html" class="public"><code>mRendererRef</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="pln">sdl<wbr/></span><span class="pun">.</span><span class="pln">render<wbr/></span><span class="pun">.</span><span class="typ">SDL_Renderer</span><span class="pun">*</span></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mTextureRef.html" class="public"><code>mTextureRef</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../components/texture_component/TextureComponent.html"><span class="typ">TextureComponent</span></a></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.mTransformRef.html" class="public"><code>mTransformRef</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../components/transform_component/TransformComponent.html"><span class="typ">TransformComponent</span></a></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.willRender.html" class="public"><code>willRender</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">bool</span></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../component/IComponent.mOwner.html" class="protected inherited"><code>mOwner</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../../gameobject/GameObject.html"><span class="typ">GameObject</span></a></code></td><td></td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Methods</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.LoadMetaData.html" class="public">
+								<code>LoadMetaData</code>
+							</a>
+							<span class="tableEntryAnnotation">(filename)</span>
+						</td>
+						<td>Load animation metadata from corresponding animData.json file
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.PlayAnimSequence.html" class="public">
+								<code>PlayAnimSequence</code>
+							</a>
+							<span class="tableEntryAnnotation">(animName)</span>
+						</td>
+						<td>Play the next frame in the sequence called animName, or switch to the first frame of that sequence if it was not already playing.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.Render.html" class="public">
+								<code>Render</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td>Play an animation based on the name of the animation sequence
+specified in the data file
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.Serialize.html" class="public">
+								<code>Serialize</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.SetFlipMode.html" class="public">
+								<code>SetFlipMode</code>
+							</a>
+							<span class="tableEntryAnnotation">(f)</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.Update.html" class="public">
+								<code>Update</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td>Progress to next frame in sequence
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Inner structs</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../../components/animation_component/AnimationComponent.Frame.html" class="public">
+								<code>Frame</code>
+							</a>
+						</td>
+						<td>Stores an individual animation frame for an animation
+</td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>

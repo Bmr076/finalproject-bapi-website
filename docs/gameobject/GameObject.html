@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Class GameObject</title>
+		<link rel="stylesheet" type="text/css" href="../styles/ddox.css"/>
+		<link rel="stylesheet" href="../prettify/prettify.css" type="text/css"/>
+		<script type="text/javascript" src="../scripts/jquery.js">/**/</script><script type="text/javascript" src="../scripts/ddox.js">/**/</script>
+	</head>
+	<body onload="setupDdox();">
+		<nav id="main-nav">
+			<noscript>
+				<p style="color: red">The search functionality needs JavaScript enabled</p>
+			</noscript>
+			<div id="symbolSearchPane" style="display: none">
+				<form action="#" method="GET">
+					<input id="symbolSearch" type="text" name="q" placeholder="Search for symbols" autocomplete="off" onchange="performSymbolSearch(40);" onkeypress="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();"/>
+				</form>
+				<ul id="symbolSearchResults" class="symbolList" style="display: none"></ul><script type="application/javascript" src="../symbols.js"></script><script type="application/javascript">var symbolSearchRootDir = "../";
+$('#symbolSearchPane').show();</script>
+			</div>
+			<ul class="tree-view">
+				<li class="tree-view collapsed">
+					<div class="package ">
+						<a href="../components.html">components</a>
+					</div>
+			<ul class="tree-view">
+				<li>
+					<div class="module ">
+						<a href="../components/animation_component.html">animation_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/collision_component.html">collision_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/script_component.html">script_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/texture_component.html">texture_component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../components/transform_component.html">transform_component</a>
+					</div>
+				</li>
+			</ul>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../camera.html">camera</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../centeredRect.html">centeredRect</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../component.html">component</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../engine_config.html">engine_config</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gameapplication.html">gameapplication</a>
+					</div>
+				</li>
+				<li>
+					<div class="module selected">
+						<a href="../gameobject.html">gameobject</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../gamestate.html">gamestate</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../inputmanager.html">inputmanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../resourcemanager.html">resourcemanager</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scene.html">scene</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../scenetree.html">scenetree</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sdl_abstraction.html">sdl_abstraction</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../sound.html">sound</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../state.html">state</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tileentity.html">tileentity</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../tilemap.html">tilemap</a>
+					</div>
+				</li>
+				<li>
+					<div class="module ">
+						<a href="../ui_element.html">ui_element</a>
+					</div>
+				</li>
+			</ul>
+		</nav>
+		<div id="main-contents">
+			<h1>Class GameObject</h1><p></p>
+			<div class="prototype">
+				<code class="lang-d">
+					<div class="single-prototype">
+			<span class="kwd">class</span> <span class="typ">GameObject</span><span class="pun">;</span>
+					</div>
+				</code>
+			</div>
+			
+			<section><h2>Constructors</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.this.html" class="public">
+								<code>this</code>
+							</a>
+							<span class="tableEntryAnnotation">(objectType)</span>
+						</td>
+						<td>Construct a new game object. Note that all game objects have a transform component.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Fields</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Type</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.mComponents.html" class="protected"><code>mComponents</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../component/IComponent.html"><span class="typ">IComponent</span></a><span class="pun">[</span><a href="../component/ComponentType.html"><span class="typ">ComponentType</span></a><span class="pun">]</span></code></td><td>A dictionary of this object's components. Each game object can only have one of each non-script component type.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.mScripts.html" class="protected"><code>mScripts</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><a href="../components/script_component/ScriptComponent.html"><span class="typ">ScriptComponent</span></a><span class="pun">[]</span></code></td><td>A dynamic array of scripts which will be run for this object each frame.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.mCountGameObjs.html" class="private"><code>mCountGameObjs</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="kwd">shared</span><span class="pun">(</span><span class="typ">ulong</span><span class="pun">)</span></code></td><td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.mID.html" class="private"><code>mID</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">ulong</span></code></td><td>The (auto-incrementing) ID of the game object.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.mType.html" class="private"><code>mType</code></a>
+						</td>
+						<td class="typecol"><code class="prettyprint lang-d"><span class="typ">string</span></code></td><td>The type of the game object. This is an arbitrary string, useful for quickly finding a game object without an ID.
+</td>
+					</tr>
+				</table>
+			</section>
+			<section><h2>Methods</h2>
+				<table>
+					<col class="caption"/>
+					<tr>
+						<th>Name</th><th>Description</th>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.AddComponent.html" class="public">
+								<code>AddComponent</code>
+							</a>
+							<span class="tableEntryAnnotation">(comp)</span>
+						</td>
+						<td>Add a component (script or non-script) to this game object.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.GetComponent.html" class="public">
+								<code>GetComponent</code>
+							</a>
+							<span class="tableEntryAnnotation">(compType)</span>
+						</td>
+						<td>Get the non-script component matching compType for this game object.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.GetID.html" class="public">
+								<code>GetID</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.GetScript.html" class="public">
+								<code>GetScript</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.GetScripts.html" class="public">
+								<code>GetScripts</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.GetType.html" class="public">
+								<code>GetType</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.Input.html" class="public">
+								<code>Input</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.RemoveComponent.html" class="public">
+								<code>RemoveComponent</code>
+							</a>
+							<span class="tableEntryAnnotation">(compType)</span>
+						</td>
+						<td>Removes a non-script component from this GameObject.
+</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.Render.html" class="public">
+								<code>Render</code>
+							</a>
+							<span class="tableEntryAnnotation">(renderer)</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.Serialize.html" class="public">
+								<code>Serialize</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<a href="../gameobject/GameObject.Update.html" class="public">
+								<code>Update</code>
+							</a>
+							<span class="tableEntryAnnotation">()</span>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</section>
+			<footer>
+				<table class="license-info">
+					<tr>
+						<th>Authors</th>
+						<td>
+							<p>Aya Kasim, Isai Melendez, Pax Ryan, Bradley Rodriguez
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>Copyright</th>
+						<td>
+							<p>© 2025
+</p>
+
+						</td>
+					</tr>
+					<tr>
+						<th>License</th>
+						<td>
+							
+						</td>
+					</tr>
+				</table>
+				<p class="faint">Generated using the DDOX documentation generator</p>
+			</footer>
+		</div>
+	</body>
+</html>
